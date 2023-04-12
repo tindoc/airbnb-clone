@@ -37,7 +37,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## vscode extensions
 - Tailwind CSS IntelliSense
-- ES7+ React/Redux/React-Native snippets
+- Simple React Snippets
+  在使用上比 ES7+ React/Redux/React-Native snippets 方便，直接输入即可，无需通过 `ctrl+shift+p` 来调用
 - ESLint
-- Code Spell Checker
+- Code Spell Checker 排查有没有打错，特别是 CSS
 - Auto Rename Tag
+
+## package
+- react-icons 图标
+- zustand 状态管理
+- axios 网络请求
+- react-hook-form 表单处理
+- react-hot-toast 提示框
