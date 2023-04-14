@@ -41,7 +41,7 @@ export async function POST(request: Request) {
       roomCount,
       bathroomCount,
       guestCount,
-      locationValue: location.value, // todo 仅使用 value 貌似只有国家信息，是否要使用 latlng？？
+      locationValue: location.value, // todo 视频 5:04 中说 for safe 是指保存了 string，实际上这个 string 貌似在业务上没有什么意义，不是具体的地址（只有国家级别）
       price: parseInt(price, 10)
     },
   });
