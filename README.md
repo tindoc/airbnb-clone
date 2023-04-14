@@ -15,25 +15,43 @@
 ## vscode extensions
 - Tailwind CSS IntelliSense
 - Simple React Snippets
-  在使用上比 *ES7+ React/Redux/React-Native snippets* 方便，直接输入即可，无需通过 `ctrl+shift+p` 来调用
+
+  在使用上比 *ES7+ React/Redux/React-Native snippets* 方便，直接输入即可，无需通过 VSCode Runner 来调用
 - ESLint
-- Code Spell Checker 检查 CSS
-- Auto Rename Tag
-- Prettier - Code formatter
-- Prisma 
-  - npx prisma init
-  - npx prisma db push
+- `Code Spell Checker` 检查 CSS
+- `Prettier - Code formatter`
+- Prisma
+  
+  使用：
+  - `npx prisma init` 会生成 *prisma/* 目录
+  - `npx prisma db push`
 
 ## npm package
-- react-icons 图标
-- zustand React 状态管理
 - axios 网络请求
-- react-hook-form 表单处理
+- `prisma -D` 用来初始化 MongoDB 的 collections
+
+- next-cloudinary 云存储
+
+
+- `zustand` React 状态管理
+- query-string 路由 param 参数设置
+
+- react-icons 图标库
 - react-hot-toast 提示框
-- `-D prisma` 用来初始化 MongoDB collection
+
+- react-hook-form 表单处理
+- `react-select` Input type=select
+
 - auth 有关
   - next-auth
-  - @prisma/client
   - @next-auth/prisma-adapter
-  - bcrypt 和 `-D @types/bcrypt`
-- query-string 路由 param 参数设置
+  - @prisma/client
+  - bcrypt 和 `@types/bcrypt -D`
+
+- 地理位置有关
+  - world-countries 国家库
+  - leaflet/react-leaflet 和 `-D @types/leaflet` 地图包
+
+    [https://react-leaflet.js.org/](https://react-leaflet.js.org/)
+
+    [高德](https://uiwjs.github.io/react-amap/) & [百度](https://uiwjs.github.io/react-baidu-map/)
