@@ -36,3 +36,4 @@
   - @prisma/client
   - @next-auth/prisma-adapter
   - bcrypt 和 `-D @types/bcrypt`
+- query-string 路由 param 参数设置

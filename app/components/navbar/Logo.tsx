@@ -8,6 +8,7 @@ const Logo = () => {
 
   return (
     <Image
+      onClick={() => router.push("/")} // 点击图标回首页
       alt="logo"
       className="hidden md:block cursor-pointer"
       height="100"
