@@ -1,6 +1,6 @@
 import { Listing, Reservation, User } from '@prisma/client';
 
-// 主要为了解决：Only plain objects can be passed to Client Components from Server Components. Date objects are not supported.
+// 使用 TS Omit 主要为了解决：Only plain objects can be passed to Client Components from Server Components. Date objects are not supported.
 
 export type SafeUser = Omit<
   User,
@@ -17,3 +17,13 @@ export type SafeListing = Omit<
 > & {
  createdAt: string;
 }
+
+export type SafeReservation = Omit<
+  Reservation, 
+  "createdAt" | "startDate" | "endDate" | "listing"
+> & {
+  createdAt: string;
+  startDate: string;
+  endDate: string;
+  listing: SafeListing;
+};
