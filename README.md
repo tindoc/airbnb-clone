@@ -15,6 +15,7 @@
   - types 类型定义（client）
     
     用于将 server 的类转成 client 的类，client 只能用 string, number 基础类型，不能使用 Date 类型
+  - `[文件夹]/page.tsx` client 页面，如果涉及到页面有关的 page，则会在这里添加 `xxxClient.tsx` 的页面文件
 - pages 页面 
 
   @todo 貌似这个页面是偏向于接口的那种，因为 `app/listings/[listingId]/page.tsx` 也是页面
