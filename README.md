@@ -42,7 +42,6 @@
 
 - next-cloudinary 云存储
 
-
 - `zustand` React 状态管理
 - query-string 路由 param 参数设置
 
@@ -50,7 +49,7 @@
 - react-hot-toast 提示框
 - date-fns 日期处理
 - react-date-range 和 `@types/react-date-range -D` 日期处理
-
+- react-spinners
 - react-hook-form 表单处理
 - `react-select` Input type=select
 
