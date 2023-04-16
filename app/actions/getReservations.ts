@@ -16,10 +16,10 @@ export default async function getReservations(
     if (listingId) {
       query.listingId = listingId;
     };
-    if (userId) {
+    if (userId) { // userId 是指发起 reservation 的用户 ID
       query.userId = userId;
     }
-    if (authorId) {
+    if (authorId) { // authorId 是指房主的 ID
       query.listing = { userId: authorId }; // 这个 userId 是 key，实际就是字符串，不是变量
     }
 

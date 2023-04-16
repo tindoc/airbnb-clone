@@ -26,7 +26,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
   const rentModal = useRentModal();
   
   const toggleOpen = useCallback(() => {
-    setIsOpen((isOpen) => !isOpen);
+    setIsOpen(v => !v);
   }, []);
 
   const onRent = useCallback(() => {
@@ -44,7 +44,7 @@ const UserMenu: React.FC<UserMenuProps> = ({
          className="hidden md:block text-sm font-semibold py-4 px-4 rounded-full hover:bg-neutral-100 transition cursor-pointer"
          onClick={onRent} // 使用 onClick 必须指定 use client
         >
-          Aribnb your home
+          Airbnb your home
         </div>
         <div 
           className="p-4 md:py-1 md:px-2 border-[1px] border-neutral-200 flex flex-row items-center gap-3 rounded-full cursor-pointer hover:shadow-md transition"
@@ -63,9 +63,9 @@ const UserMenu: React.FC<UserMenuProps> = ({
             { currentUser? (
               <>
                 <MenuItem label='My trips' onClick={() => router.push('/trips')} />
-                <MenuItem label='My favorites' onClick={() => {}} />
-                <MenuItem label='My reservations' onClick={() => {}} />
-                <MenuItem label='My properties' onClick={() => {}} />
+                <MenuItem label='My favorites' onClick={() => router.push('/favorites')} />
+                <MenuItem label='My reservations' onClick={() => router.push('/reservations')} />
+                <MenuItem label='My properties' onClick={() => router.push('/properties')} />
                 <MenuItem label='Airbnb my home' onClick={rentModal.onOpen} />
                 <hr />
                 <MenuItem onClick={() => signOut()} label='Logout'/>
